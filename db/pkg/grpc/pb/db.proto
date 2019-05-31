@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package pb;
+
+
+
+//The Db service definition.
+service Db {
+ rpc ConnectDB (ConnectDBRequest) returns (ConnectDBReply);
+ rpc GetDB     (GetDBRequest    ) returns (GetDBReply    );
+ rpc Init      (InitRequest     ) returns (InitReply     );
+}
+
+message ConnectDBRequest {}
+
+message ConnectDBReply {}
+
+message GetDBRequest {}
+
+message GetDBReply {}
+
+message InitRequest {}
+
+message InitReply {}
+
